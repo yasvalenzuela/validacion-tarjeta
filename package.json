@@ -1,0 +1,22 @@
+{
+  "name": "validacion-tarjeta",
+  "version": "1.0.0",
+  "description": "```\r #### defino mi funcion:\r + function isValidCard: con esta funcion se validara una tarjeta.\r - creo una varibale llamada numbersTarjet en donde pido al ususario que ingrese los números de su tarjeta a traves de un prompt\r - dentro de la funcion creo un bucle do...while para que el usuario si o si ingrese lo que se le pide\r - si no ingresa nada se genera una alerta que le pida que ingrese solo numeros, esto se repite hasta que el usuario ingrese un numero\r - creo una variable llamada size que sera igual a la longitud de la variable numbersTarjet\r - creo una variable llamada lastPosition que sera size-1, con esta variable obtendre la ultima posicion\r - genero un ciclo for que recorra la varibale numbersTarjet pero de atras para adelante\r - creo una variable llamada array en donde pasare los datos ingresados por el usuario de string a number, ya que todo lo que pida mediante prompt entrega un dato tipo string\r - creo una variable llamada newArray que es tipo array vacia\r - luego mediante push agrego los datos guardados en mi variable array a mi variable vacía \r - ahora inicio otro ciclo for pero ahora que recorra normal, es decir desde mi primera posición\r \t- si el indice al dividirlo por dos da como residuo 0, es par\r \t\t- creo una variable llamada numbersPar que es igual al indice de newArray -1 *2, (-1 porque la posición para el metodo Luhn comienza de 1 y aca necesito que el indice sea cero)\r \t\t- si numbersPar es mayor a 10 \r \t\t\t- separo los digitos y los sumo \r \t\t\t- ahora creo otra variable en donde guarde los numeros impares y los nuevos digitos de los pares\r \t\t\t- inicio un ciclo for para que recorra mi nueva variable con los digitos actualizados\r \t\t\t- creo una variable tipo array vacia en donde se guardara la suma de todos los numeros\r \t\t\t- sumo todos los elementos del array y mediante push agrego el resultado de la suma a mi variable vacia\r \t\t\t- si mi variable vacia al dividirla por 10 da como residuo 0 \r \t\t\t- retorna una alerta que diga tu tarjeta es válida\r \t\t\t- si no da 0 \r \t\t\t- retorna una alerta que diga tu tarjeta no es valida y se inicia el bucle do...while del inicio.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasvalenzuela/validacion-tarjeta.git"
+  },
+  "author": "Yasna Valenzuela",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yasvalenzuela/validacion-tarjeta/issues"
+  },
+  "homepage": "https://github.com/yasvalenzuela/validacion-tarjeta#readme",
+  "devDependencies": {
+    "eslint": "^4.16.0"
+  }
+}
